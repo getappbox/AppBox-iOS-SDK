@@ -1,0 +1,16 @@
+PODS:
+  - AppBoxSDK (1.0.0)
+
+DEPENDENCIES:
+  - AppBoxSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AppBoxSDK
+
+SPEC CHECKSUMS:
+  AppBoxSDK: ae11eb4f6006022b5b3b9471dc3691b931cd61a6
+
+PODFILE CHECKSUM: d1a0b6506c16b26c3b294902d65178d11d38f373
+
+COCOAPODS: 1.7.5

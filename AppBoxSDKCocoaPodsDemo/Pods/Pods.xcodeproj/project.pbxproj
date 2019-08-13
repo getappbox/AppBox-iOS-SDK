@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008C4E3039D51EB5D46814D6B6DA90A8 /* AppBoxSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AAC553687D40C6CB4F008F2AA90CA8 /* AppBoxSDK-dummy.m */; };
+		0533F68A4D3EA5258C5C2C81F7D0E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1B6B3501CEE464968C18C1D4C8B2B62D /* UpdateAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC12AB39034AD831404158560B5ACF7 /* UpdateAlertController.swift */; };
+		43C092BFE757137DE24278B1EC3D2856 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6858A10B1DBF1C07BF446E02C77F151 /* UserDefaultExtension.swift */; };
+		5638905AF5F77707C6F564580ACD6C4E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13849CA48025160388EA561C4936BF /* AppInfo.swift */; };
+		63E0C98B8C8E3091FFEF38D4A0575603 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F4DD25C29E34263BD9AC714284467 /* DataParser.swift */; };
+		660214F04BA5F76A3A80384F4FDAA3BC /* Pods-AppBoxSDKCocoaPodsDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C16C87C29F363D991A539853F482F18 /* Pods-AppBoxSDKCocoaPodsDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F18348B41BAB7DC9F8FF8FF817A2373 /* AppBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301925AE08178D69864B37C5F459A022 /* AppBox.swift */; };
+		8DA563EB7DCBF4795EB4ABC11B5E2422 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD3DD7850094E689C056C674515C82 /* Enums.swift */; };
+		8DBE46777702EFC31D89846EF7E8FAB5 /* AppBoxSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B8C0C7D675B54EDB1DDA16684145DC /* AppBoxSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B69C97E86A2EC189181A40A5D34FBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECFA93A01F0A414275CEA76A889F4E /* Constants.swift */; };
+		94610851B6E47B0344438DAD2F1435EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A9BBA0B9FFAAFE770FE27737F67A95A0 /* AppBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D0025F4A9E24C2DB2CE8577F5C8835 /* AppBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B87D4CF37AED98B6503908091FC96247 /* UpdateWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4128F8B7E2937FD8D08994771B71913 /* UpdateWindow.swift */; };
+		C3448E1B63AFF1516FC848C39DDF0D0E /* AppInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD438E50B44E1C8F8F14470237677BC /* AppInfoService.swift */; };
+		DCE0C1A5963AC1926CCCBBB89AEEFCB2 /* ABLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F599C9C2C32F585EEF61209640FAFED /* ABLog.swift */; };
+		E0172D12AEE0CDE135633FEDF23752A6 /* Pods-AppBoxSDKCocoaPodsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F47510ACF2449FF326D307FEC1FDEE46 /* Pods-AppBoxSDKCocoaPodsDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000EB853F888CD775E41D4136EEB85E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79ABA9B00602F6679641C350D48CA14D;
+			remoteInfo = AppBoxSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033B03B7FB5C6B2300C24B0F418BFA13 /* Pods-AppBoxSDKCocoaPodsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppBoxSDKCocoaPodsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		14D0025F4A9E24C2DB2CE8577F5C8835 /* AppBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppBox.h; path = AppBox/AppBox/AppBox.h; sourceTree = "<group>"; };
+		1E4D70792DBD72F774038A13057FC949 /* Pods-AppBoxSDKCocoaPodsDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppBoxSDKCocoaPodsDemo-Info.plist"; sourceTree = "<group>"; };
+		2408AEC92CF939D724FF38933C7424FE /* AppBoxSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppBoxSDK-Info.plist"; sourceTree = "<group>"; };
+		301925AE08178D69864B37C5F459A022 /* AppBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppBox.swift; path = AppBox/AppBox/AppBox.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AE227B6695B64AC7D5EFD97DC7519BD /* AppBoxSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppBoxSDK.modulemap; sourceTree = "<group>"; };
+		3F599C9C2C32F585EEF61209640FAFED /* ABLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABLog.swift; path = AppBox/AppBox/Utilities/ABLog.swift; sourceTree = "<group>"; };
+		4B76AD66CC0284F592163E2F368D1619 /* Pods-AppBoxSDKCocoaPodsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppBoxSDKCocoaPodsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		51EC7AA3023E95F0DCAD4C8997935E1A /* AppBoxSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppBoxSDK.xcconfig; sourceTree = "<group>"; };
+		62AAC553687D40C6CB4F008F2AA90CA8 /* AppBoxSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppBoxSDK-dummy.m"; sourceTree = "<group>"; };
+		65CD3DD7850094E689C056C674515C82 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = AppBox/AppBox/Constants/Enums.swift; sourceTree = "<group>"; };
+		6BD438E50B44E1C8F8F14470237677BC /* AppInfoService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfoService.swift; path = AppBox/AppBox/Services/AppInfoService.swift; sourceTree = "<group>"; };
+		7222F9E81EAE8DAAA75104CE3395589B /* Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppBoxSDK.framework; path = AppBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B13849CA48025160388EA561C4936BF /* AppInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfo.swift; path = AppBox/AppBox/Models/AppInfo.swift; sourceTree = "<group>"; };
+		9C16C87C29F363D991A539853F482F18 /* Pods-AppBoxSDKCocoaPodsDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppBoxSDKCocoaPodsDemo-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6B8C0C7D675B54EDB1DDA16684145DC /* AppBoxSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppBoxSDK-umbrella.h"; sourceTree = "<group>"; };
+		AEECFA93A01F0A414275CEA76A889F4E /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = AppBox/AppBox/Constants/Constants.swift; sourceTree = "<group>"; };
+		B83855F6947D028DBDAE20B73CAAC5DD /* Pods-AppBoxSDKCocoaPodsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppBoxSDKCocoaPodsDemo-frameworks.sh"; sourceTree = "<group>"; };
+		BEC12AB39034AD831404158560B5ACF7 /* UpdateAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateAlertController.swift; path = AppBox/AppBox/ViewControllers/UpdateAlertController.swift; sourceTree = "<group>"; };
+		C1DE6A6E7F5DF9633FFD3DC56AC354E2 /* AppBoxSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppBoxSDK-prefix.pch"; sourceTree = "<group>"; };
+		C4128F8B7E2937FD8D08994771B71913 /* UpdateWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateWindow.swift; path = AppBox/AppBox/ViewControllers/UpdateWindow.swift; sourceTree = "<group>"; };
+		D08A2B3EF319EBDB0A6A7DDE446B784A /* Pods_AppBoxSDKCocoaPodsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppBoxSDKCocoaPodsDemo.framework; path = "Pods-AppBoxSDKCocoaPodsDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8CA3AA4B56EAFD5D746A42DCACD01F4 /* Pods-AppBoxSDKCocoaPodsDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppBoxSDKCocoaPodsDemo.modulemap"; sourceTree = "<group>"; };
+		E2283D7152E472EB0F5260C719EE7FF1 /* Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E57F4DD25C29E34263BD9AC714284467 /* DataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataParser.swift; path = AppBox/AppBox/Utilities/DataParser.swift; sourceTree = "<group>"; };
+		E6858A10B1DBF1C07BF446E02C77F151 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultExtension.swift; path = AppBox/AppBox/Extensions/UserDefaultExtension.swift; sourceTree = "<group>"; };
+		F47510ACF2449FF326D307FEC1FDEE46 /* Pods-AppBoxSDKCocoaPodsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppBoxSDKCocoaPodsDemo-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D05D04C8B986233DDC55E9F0D1FC79A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0533F68A4D3EA5258C5C2C81F7D0E495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8AA4614609FEA5A5B2D23FED5D4A7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94610851B6E47B0344438DAD2F1435EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A329D6E2A22BBD93A0F8BFB8D42303A /* AppBoxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F599C9C2C32F585EEF61209640FAFED /* ABLog.swift */,
+				14D0025F4A9E24C2DB2CE8577F5C8835 /* AppBox.h */,
+				301925AE08178D69864B37C5F459A022 /* AppBox.swift */,
+				9B13849CA48025160388EA561C4936BF /* AppInfo.swift */,
+				6BD438E50B44E1C8F8F14470237677BC /* AppInfoService.swift */,
+				AEECFA93A01F0A414275CEA76A889F4E /* Constants.swift */,
+				E57F4DD25C29E34263BD9AC714284467 /* DataParser.swift */,
+				65CD3DD7850094E689C056C674515C82 /* Enums.swift */,
+				BEC12AB39034AD831404158560B5ACF7 /* UpdateAlertController.swift */,
+				C4128F8B7E2937FD8D08994771B71913 /* UpdateWindow.swift */,
+				E6858A10B1DBF1C07BF446E02C77F151 /* UserDefaultExtension.swift */,
+				8FE7A56F3764F1CC69E81BA03A4AB8F3 /* Support Files */,
+			);
+			name = AppBoxSDK;
+			path = AppBoxSDK;
+			sourceTree = "<group>";
+		};
+		6325FE91E27059BC1F79F6B182313278 /* Pods-AppBoxSDKCocoaPodsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA3AA4B56EAFD5D746A42DCACD01F4 /* Pods-AppBoxSDKCocoaPodsDemo.modulemap */,
+				E2283D7152E472EB0F5260C719EE7FF1 /* Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.markdown */,
+				7222F9E81EAE8DAAA75104CE3395589B /* Pods-AppBoxSDKCocoaPodsDemo-acknowledgements.plist */,
+				F47510ACF2449FF326D307FEC1FDEE46 /* Pods-AppBoxSDKCocoaPodsDemo-dummy.m */,
+				B83855F6947D028DBDAE20B73CAAC5DD /* Pods-AppBoxSDKCocoaPodsDemo-frameworks.sh */,
+				1E4D70792DBD72F774038A13057FC949 /* Pods-AppBoxSDKCocoaPodsDemo-Info.plist */,
+				9C16C87C29F363D991A539853F482F18 /* Pods-AppBoxSDKCocoaPodsDemo-umbrella.h */,
+				033B03B7FB5C6B2300C24B0F418BFA13 /* Pods-AppBoxSDKCocoaPodsDemo.debug.xcconfig */,
+				4B76AD66CC0284F592163E2F368D1619 /* Pods-AppBoxSDKCocoaPodsDemo.release.xcconfig */,
+			);
+			name = "Pods-AppBoxSDKCocoaPodsDemo";
+			path = "Target Support Files/Pods-AppBoxSDKCocoaPodsDemo";
+			sourceTree = "<group>";
+		};
+		8ADA6E6BA90B9DCA8847B6FA3D956135 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6325FE91E27059BC1F79F6B182313278 /* Pods-AppBoxSDKCocoaPodsDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8FE7A56F3764F1CC69E81BA03A4AB8F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AE227B6695B64AC7D5EFD97DC7519BD /* AppBoxSDK.modulemap */,
+				51EC7AA3023E95F0DCAD4C8997935E1A /* AppBoxSDK.xcconfig */,
+				62AAC553687D40C6CB4F008F2AA90CA8 /* AppBoxSDK-dummy.m */,
+				2408AEC92CF939D724FF38933C7424FE /* AppBoxSDK-Info.plist */,
+				C1DE6A6E7F5DF9633FFD3DC56AC354E2 /* AppBoxSDK-prefix.pch */,
+				A6B8C0C7D675B54EDB1DDA16684145DC /* AppBoxSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppBoxSDK";
+			sourceTree = "<group>";
+		};
+		A641A7B142AD081649ED52CF97854B19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A329D6E2A22BBD93A0F8BFB8D42303A /* AppBoxSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCD581C0E6BB4A645EA11540B273A3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */,
+				D08A2B3EF319EBDB0A6A7DDE446B784A /* Pods_AppBoxSDKCocoaPodsDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A641A7B142AD081649ED52CF97854B19 /* Pods */,
+				BCD581C0E6BB4A645EA11540B273A3A9 /* Products */,
+				8ADA6E6BA90B9DCA8847B6FA3D956135 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BA6F9EFF06B08490FDA461848B4733A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660214F04BA5F76A3A80384F4FDAA3BC /* Pods-AppBoxSDKCocoaPodsDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664A5CEF5F82FD2C234DB6F649443FAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BBA0B9FFAAFE770FE27737F67A95A0 /* AppBox.h in Headers */,
+				8DBE46777702EFC31D89846EF7E8FAB5 /* AppBoxSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F0A99B0C66CB73AC2429E01E7E8D0E /* Build configuration list for PBXNativeTarget "AppBoxSDK" */;
+			buildPhases = (
+				664A5CEF5F82FD2C234DB6F649443FAA /* Headers */,
+				F8C248338DF7D697294D5F9274509BDA /* Sources */,
+				1D05D04C8B986233DDC55E9F0D1FC79A /* Frameworks */,
+				D349D8F5BAD5A29C5F96BF9E174B779A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppBoxSDK;
+			productName = AppBoxSDK;
+			productReference = 73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AED73958C8352C2BDEAFE00119ABD0E5 /* Pods-AppBoxSDKCocoaPodsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE045BD7B222DE6BF42F2A82A45D469 /* Build configuration list for PBXNativeTarget "Pods-AppBoxSDKCocoaPodsDemo" */;
+			buildPhases = (
+				3BA6F9EFF06B08490FDA461848B4733A /* Headers */,
+				F8C90ABC9B474FD1BF5EA7D4E4EC5B7A /* Sources */,
+				B8AA4614609FEA5A5B2D23FED5D4A7FE /* Frameworks */,
+				053C3F6B740008EA4B50B6138A90450B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A369A0B2E65F5FCEF67E0D4E2D0FA6B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppBoxSDKCocoaPodsDemo";
+			productName = "Pods-AppBoxSDKCocoaPodsDemo";
+			productReference = D08A2B3EF319EBDB0A6A7DDE446B784A /* Pods_AppBoxSDKCocoaPodsDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BCD581C0E6BB4A645EA11540B273A3A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */,
+				AED73958C8352C2BDEAFE00119ABD0E5 /* Pods-AppBoxSDKCocoaPodsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		053C3F6B740008EA4B50B6138A90450B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D349D8F5BAD5A29C5F96BF9E174B779A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C248338DF7D697294D5F9274509BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE0C1A5963AC1926CCCBBB89AEEFCB2 /* ABLog.swift in Sources */,
+				6F18348B41BAB7DC9F8FF8FF817A2373 /* AppBox.swift in Sources */,
+				008C4E3039D51EB5D46814D6B6DA90A8 /* AppBoxSDK-dummy.m in Sources */,
+				5638905AF5F77707C6F564580ACD6C4E /* AppInfo.swift in Sources */,
+				C3448E1B63AFF1516FC848C39DDF0D0E /* AppInfoService.swift in Sources */,
+				93B69C97E86A2EC189181A40A5D34FBC /* Constants.swift in Sources */,
+				63E0C98B8C8E3091FFEF38D4A0575603 /* DataParser.swift in Sources */,
+				8DA563EB7DCBF4795EB4ABC11B5E2422 /* Enums.swift in Sources */,
+				1B6B3501CEE464968C18C1D4C8B2B62D /* UpdateAlertController.swift in Sources */,
+				B87D4CF37AED98B6503908091FC96247 /* UpdateWindow.swift in Sources */,
+				43C092BFE757137DE24278B1EC3D2856 /* UserDefaultExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C90ABC9B474FD1BF5EA7D4E4EC5B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0172D12AEE0CDE135633FEDF23752A6 /* Pods-AppBoxSDKCocoaPodsDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A369A0B2E65F5FCEF67E0D4E2D0FA6B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppBoxSDK;
+			target = 79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */;
+			targetProxy = 000EB853F888CD775E41D4136EEB85E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		37685A38375F1138870288BE45439FB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EC7AA3023E95F0DCAD4C8997935E1A /* AppBoxSDK.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppBoxSDK/AppBoxSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK.modulemap";
+				PRODUCT_MODULE_NAME = AppBoxSDK;
+				PRODUCT_NAME = AppBoxSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6545B66E70AC5248099BA390F61B6532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B76AD66CC0284F592163E2F368D1619 /* Pods-AppBoxSDKCocoaPodsDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppBoxSDKCocoaPodsDemo/Pods-AppBoxSDKCocoaPodsDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppBoxSDKCocoaPodsDemo/Pods-AppBoxSDKCocoaPodsDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81296C49125CE2EE5521E58CE1123D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EC7AA3023E95F0DCAD4C8997935E1A /* AppBoxSDK.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppBoxSDK/AppBoxSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK.modulemap";
+				PRODUCT_MODULE_NAME = AppBoxSDK;
+				PRODUCT_NAME = AppBoxSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A65A6E27CD5B433FBEAC97DEDB34AE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033B03B7FB5C6B2300C24B0F418BFA13 /* Pods-AppBoxSDKCocoaPodsDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppBoxSDKCocoaPodsDemo/Pods-AppBoxSDKCocoaPodsDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppBoxSDKCocoaPodsDemo/Pods-AppBoxSDKCocoaPodsDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F0A99B0C66CB73AC2429E01E7E8D0E /* Build configuration list for PBXNativeTarget "AppBoxSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37685A38375F1138870288BE45439FB0 /* Debug */,
+				81296C49125CE2EE5521E58CE1123D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE045BD7B222DE6BF42F2A82A45D469 /* Build configuration list for PBXNativeTarget "Pods-AppBoxSDKCocoaPodsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A65A6E27CD5B433FBEAC97DEDB34AE31 /* Debug */,
+				6545B66E70AC5248099BA390F61B6532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,8 @@
+platform :ios, '10.0'
+
+target 'AppBoxSDKCocoaPodsDemo' do
+  use_frameworks!
+  
+  pod "AppBoxSDK"
+
+end
