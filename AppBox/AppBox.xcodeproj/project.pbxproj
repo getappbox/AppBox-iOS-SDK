@@ -14,6 +14,10 @@
 		447D2A1E22F6E66700909A03 /* ABLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D2A1D22F6E66700909A03 /* ABLog.swift */; };
 		447D2A2122F6FCB300909A03 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D2A2022F6FCB300909A03 /* DataParser.swift */; };
 		447D2A2622F6FD7000909A03 /* AppInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D2A2522F6FD7000909A03 /* AppInfoService.swift */; };
+		44CD3C662302860500D369B9 /* UpdateAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD3C652302860500D369B9 /* UpdateAlertController.swift */; };
+		44CD3C69230286D100D369B9 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD3C68230286D100D369B9 /* UserDefaultExtension.swift */; };
+		44CD3C6B2302A32900D369B9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD3C6A2302A32900D369B9 /* Enums.swift */; };
+		44CD3C6D2302AF6600D369B9 /* UpdateWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD3C6C2302AF6600D369B9 /* UpdateWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		447D2A1D22F6E66700909A03 /* ABLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABLog.swift; sourceTree = "<group>"; };
 		447D2A2022F6FCB300909A03 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		447D2A2522F6FD7000909A03 /* AppInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoService.swift; sourceTree = "<group>"; };
+		44CD3C652302860500D369B9 /* UpdateAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAlertController.swift; sourceTree = "<group>"; };
+		44CD3C68230286D100D369B9 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		44CD3C6A2302A32900D369B9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		44CD3C6C2302AF6600D369B9 /* UpdateWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		440989EB22F5ED66006B22CE /* AppBox */ = {
 			isa = PBXGroup;
 			children = (
+				44CD3C67230286BB00D369B9 /* Extensions */,
 				447D2A2222F6FD2C00909A03 /* Constants */,
 				447D2A1F22F6FC8F00909A03 /* Utilities */,
 				447D2A2422F6FD5900909A03 /* Services */,
@@ -83,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				440989FC22F5F79D006B22CE /* Constants.swift */,
+				44CD3C6A2302A32900D369B9 /* Enums.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -106,8 +116,18 @@
 		447D2A2722F6FED900909A03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				44CD3C6C2302AF6600D369B9 /* UpdateWindow.swift */,
+				44CD3C652302860500D369B9 /* UpdateAlertController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44CD3C67230286BB00D369B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44CD3C68230286D100D369B9 /* UserDefaultExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				440989F522F5ED71006B22CE /* AppBox.swift in Sources */,
+				44CD3C662302860500D369B9 /* UpdateAlertController.swift in Sources */,
 				447D2A2622F6FD7000909A03 /* AppInfoService.swift in Sources */,
 				447D2A2122F6FCB300909A03 /* DataParser.swift in Sources */,
 				440989FB22F5F22D006B22CE /* AppInfo.swift in Sources */,
 				440989FD22F5F79D006B22CE /* Constants.swift in Sources */,
+				44CD3C69230286D100D369B9 /* UserDefaultExtension.swift in Sources */,
+				44CD3C6B2302A32900D369B9 /* Enums.swift in Sources */,
+				44CD3C6D2302AF6600D369B9 /* UpdateWindow.swift in Sources */,
 				447D2A1E22F6E66700909A03 /* ABLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +359,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppBox/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +386,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppBox/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

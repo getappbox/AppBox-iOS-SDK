@@ -18,26 +18,27 @@ struct AppInfoService {
         
         
         let dataTask = URLSession.shared.dataTask(with: requestURL, completionHandler: { (data, response, error) in
-            
-            if let error = error {
-                ABLog.error("Error in requesting AppInfo.", error: error)
-                completion(nil)
-                return
-            }
-            
-            guard let data = data else {
-                ABLog.error("AppInfo data not available")
-                completion(nil)
-                return
-            }
-            
-            do {
-                let appInfo = try JSONDecoder().decode(AppInfo.self, from: data)
-                completion(appInfo)
-            }
-            catch {
-                ABLog.error("Unable to decode AppInfo", error: error)
-                completion(nil)
+            DispatchQueue.main.async {
+                if let error = error {
+                    ABLog.error("Error in requesting AppInfo.", error: error)
+                    completion(nil)
+                    return
+                }
+                
+                guard let data = data else {
+                    ABLog.error("AppInfo data not available")
+                    completion(nil)
+                    return
+                }
+                
+                do {
+                    let appInfo = try JSONDecoder().decode(AppInfo.self, from: data)
+                    completion(appInfo)
+                }
+                catch {
+                    ABLog.error("Unable to decode AppInfo", error: error)
+                    completion(nil)
+                }
             }
         })
         dataTask.resume()

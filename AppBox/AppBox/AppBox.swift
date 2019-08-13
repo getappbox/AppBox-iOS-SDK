@@ -9,49 +9,89 @@
 import Foundation
 
 open class AppBox {
-    var appInfoURL: String!
+    private var appInfoURL: String!
     
-    var appNewBuild: String?
-    var appUpdateURL: String?
-    var appNewVersion: String?
-    var appNewVersionWithBuild: String = ""
+    private var appNewBuild: String?
+    private var appUpdateURL: String?
+    private var appNewVersion: String?
+    private var appNewVersionWithBuild: String = ""
+    private var updateAlertController: UpdateAlertController?
+    private var updateCheckInProgress: Bool = false
+    private var appInfo: AppInfo?
     
     public static let Default = AppBox()
     public private(set) var key: String!
     public private(set) var checkVersionOnly: Bool = true
+    public private(set) var alertType: AlertType = .force
     
     private init() {
         
     }
     
-    public class func start(key: String, checkVersionOnly: Bool = true) {
+    public class func start(key: String, alertType: AlertType = .skip, checkVersionOnly: Bool = true) {
         AppBox.Default.key = key
+        AppBox.Default.alertType = alertType
         AppBox.Default.checkVersionOnly = checkVersionOnly
-        AppBox.Default.checkForUpdate()
+        AppBox.Default.addObservers()
+        AppBox.Default.requestAppInfo()
     }
     
-    func checkForUpdate() {
+    func addObservers() {
+        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { (notification) in
+            if let appInfo = self.appInfo {
+                self.checkForUpdate(appInfo: appInfo)
+            }
+        }
+    }
+    
+    func requestAppInfo() {
+        if updateCheckInProgress {
+            return
+        }
+        
         appInfoURL = String(format: Constants.URLs.AppInfoFormat, key)
         
+        updateCheckInProgress = true
         AppInfoService.getAppInfo(with: appInfoURL) { (appInfo) in
-            guard let appInfo = appInfo else {
-                ABLog.error("AppInfo not available.")
-                return
+            self.updateCheckInProgress = false
+            self.appInfo = appInfo
+            if let appInfo = appInfo {
+                self.checkForUpdate(appInfo: appInfo)
             }
-            
-            let update = self.getUpdateDetails(from: appInfo)
-            guard let appUpdateURL = URL(string: self.appUpdateURL ?? "") else {
-                return
-            }
-            
-            if DataParser.isNewVersionAvailable(newVersion: update.version, newBuild: update.build) {
-                ABLog.debug(String(format: "A new version of %@ is available.", self.appNewVersionWithBuild))
-                DispatchQueue.main.async {
+        }
+    }
+    
+    func checkForUpdate(appInfo: AppInfo) {
+        let update = self.getUpdateDetails(from: appInfo)
+        if UserDefaults.skippedVersion == update.version && UserDefaults.skippedBuild == update.build {
+            ABLog.debug(String(format: "User has chosen to skip version %@.", self.appNewVersionWithBuild))
+            return
+        }
+        
+        guard let appUpdateURL = URL(string: self.appUpdateURL ?? "") else {
+            return
+        }
+        
+        guard let appName = appInfo.latestVersion?.name else {
+            return
+        }
+        
+        if DataParser.isNewVersionAvailable(newVersion: update.version, newBuild: update.build) {
+            ABLog.debug(String(format: "A new version of %@ is available.", self.appNewVersionWithBuild))
+            self.updateAlertController = UpdateAlertController(appName: appName, newVersion: update.version, newBuild: update.build)
+            self.updateAlertController?.present(type: self.alertType, completion: { (action) in
+                ABLog.debug(String(format: "User has chosen to %@ version %@.", action.description, self.appNewVersionWithBuild))
+                switch action {
+                case .appBox:
                     UIApplication.shared.open(appUpdateURL, options: [:], completionHandler: nil)
+                case .skip:
+                    break
+                default:
+                    break
                 }
-            } else {
-                ABLog.debug("You're using the latest version.")
-            }
+            })
+        } else {
+            ABLog.debug("You're using the latest version.")
         }
     }
     
