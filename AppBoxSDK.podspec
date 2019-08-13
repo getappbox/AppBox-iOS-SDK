@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
     spec.homepage     = "https://github.com/getappbox/AppBox-iOS-SDK"
     spec.license      = { :type => "MIT", :file => "LICENSE" }
-    spec.author       = { "vineetchoudhary" => "appbox@developerinsider.in" }
+    spec.author       = { "Vineet Choudhary" => "vineetchoudhary@live.in" }
 
     spec.ios.deployment_target = "10.0"
     spec.swift_version = "4.2"
