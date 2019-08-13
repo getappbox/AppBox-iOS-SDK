@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name         = "AppBox"
+    spec.name         = "AppBoxSDK"
     spec.version      = "1.0.0"
     spec.summary      = "iOS framework to get the automatic update for development/ad-hoc/enterprises apps uploaded via AppBox."
 

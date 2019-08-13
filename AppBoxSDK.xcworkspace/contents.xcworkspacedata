@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AppBox.podspec">
+      location = "group:/Volumes/LongTime/Github/AppBox-iOS-SDK/AppBoxSDK.podspec">
    </FileRef>
    <FileRef
       location = "group:AppBox/AppBox.xcodeproj">
