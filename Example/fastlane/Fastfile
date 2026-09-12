@@ -1,0 +1,43 @@
+default_platform(:ios)
+
+def next_build_number
+  ENV["BUILD_NUMBER"] || Time.now.strftime("%Y%m%d%H%M")
+end
+
+platform :ios do
+  desc "Build the sample and upload it to AppBox, keeping the same install link every time."
+  lane :appbox_release do
+    gym(xcargs: "CURRENT_PROJECT_VERSION=#{next_build_number}")
+    appbox(
+      keep_same_link: true,
+      message: "AppBox SDK sample build."
+    )
+    print_install_link
+  end
+
+  desc "Build and upload, and email the install link to whoever should test it. Pass EMAILS=a@b.com,c@d.com."
+  lane :appbox_release_with_email do
+    UI.user_error!("Set EMAILS=you@example.com") if ENV["EMAILS"].to_s.empty?
+
+    gym(xcargs: "CURRENT_PROJECT_VERSION=#{next_build_number}")
+    appbox(
+      keep_same_link: true,
+      emails: ENV["EMAILS"],
+      message: "AppBox SDK sample build."
+    )
+    print_install_link
+  end
+
+  desc "Build the sample without uploading it."
+  lane :build do
+    gym(skip_archive: true, skip_codesigning: true, destination: "generic/platform=iOS Simulator")
+  end
+
+  private_lane :print_install_link do
+    link = Actions.lane_context[Actions::SharedValues::APPBOX_SHARE_URL]
+    next if link.to_s.empty?
+
+    UI.success("Install link: #{link}")
+    UI.important("Put this in ExampleConfiguration.swift (fallbackInstallLink) so the SDK watches this app.")
+  end
+end

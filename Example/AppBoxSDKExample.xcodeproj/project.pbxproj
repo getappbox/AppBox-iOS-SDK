@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EB0000000000000000000C0 /* AppBoxSDKExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0000000000000000000B0 /* AppBoxSDKExampleApp.swift */; };
+		4EB0000000000000000000C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0000000000000000000B1 /* ContentView.swift */; };
+		4EB0000000000000000000C2 /* ExampleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0000000000000000000B2 /* ExampleConfiguration.swift */; };
+		4EB0000000000000000000C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0000000000000000000B3 /* Assets.xcassets */; };
+		4EB0000000000000000000C4 /* AppBoxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB0000000000000000000D1 /* AppBoxSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EB0000000000000000000A5 /* AppBoxSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBoxSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB0000000000000000000B0 /* AppBoxSDKExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBoxSDKExampleApp.swift; sourceTree = "<group>"; };
+		4EB0000000000000000000B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4EB0000000000000000000B2 /* ExampleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleConfiguration.swift; sourceTree = "<group>"; };
+		4EB0000000000000000000B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EB0000000000000000000AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB0000000000000000000C4 /* AppBoxSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EB0000000000000000000A1 = {
+			isa = PBXGroup;
+			children = (
+				4EB0000000000000000000A3 /* AppBoxSDKExample */,
+				4EB0000000000000000000A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EB0000000000000000000A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0000000000000000000A5 /* AppBoxSDKExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EB0000000000000000000A3 /* AppBoxSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0000000000000000000B0 /* AppBoxSDKExampleApp.swift */,
+				4EB0000000000000000000B1 /* ContentView.swift */,
+				4EB0000000000000000000B2 /* ExampleConfiguration.swift */,
+				4EB0000000000000000000B3 /* Assets.xcassets */,
+			);
+			path = AppBoxSDKExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EB0000000000000000000A4 /* AppBoxSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EB0000000000000000000A9 /* Build configuration list for PBXNativeTarget "AppBoxSDKExample" */;
+			buildPhases = (
+				4EB0000000000000000000AC /* Sources */,
+				4EB0000000000000000000AD /* Frameworks */,
+				4EB0000000000000000000AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppBoxSDKExample;
+			packageProductDependencies = (
+				4EB0000000000000000000D1 /* AppBoxSDK */,
+			);
+			productName = AppBoxSDKExample;
+			productReference = 4EB0000000000000000000A5 /* AppBoxSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EB0000000000000000000A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					4EB0000000000000000000A4 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 4EB0000000000000000000A6 /* Build configuration list for PBXProject "AppBoxSDKExample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EB0000000000000000000A1;
+			packageReferences = (
+				4EB0000000000000000000D0 /* XCLocalSwiftPackageReference ".." */,
+			);
+			productRefGroup = 4EB0000000000000000000A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EB0000000000000000000A4 /* AppBoxSDKExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EB0000000000000000000AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB0000000000000000000C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EB0000000000000000000AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB0000000000000000000C1 /* ContentView.swift in Sources */,
+				4EB0000000000000000000C0 /* AppBoxSDKExampleApp.swift in Sources */,
+				4EB0000000000000000000C2 /* ExampleConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EB0000000000000000000A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		4EB0000000000000000000A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EB0000000000000000000AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PQ7E4L589;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerinsider.AppBoxSDKExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EB0000000000000000000AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PQ7E4L589;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerinsider.AppBoxSDKExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EB0000000000000000000A6 /* Build configuration list for PBXProject "AppBoxSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB0000000000000000000A7 /* Debug */,
+				4EB0000000000000000000A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EB0000000000000000000A9 /* Build configuration list for PBXNativeTarget "AppBoxSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB0000000000000000000AA /* Debug */,
+				4EB0000000000000000000AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4EB0000000000000000000D0 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EB0000000000000000000D1 /* AppBoxSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppBoxSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4EB0000000000000000000A0 /* Project object */;
+}

@@ -1,0 +1,62 @@
+name: Build & Test
+
+on:
+  push:
+    branches: [master, main]
+    paths-ignore: ["**.md"]
+  pull_request:
+    paths-ignore: ["**.md"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: SDK
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Build for iOS
+        run: |
+          set -o pipefail
+          xcodebuild build -scheme AppBoxSDK \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Test on the simulator
+        run: |
+          set -o pipefail
+          xcodebuild test -scheme AppBoxSDK \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
+            CODE_SIGNING_ALLOWED=NO
+
+  example:
+    name: Example app
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      # The sample links the package from this checkout, so this is also the integration test
+      # for consuming the SDK through SPM.
+      - name: Build the example
+        working-directory: Example
+        run: |
+          set -o pipefail
+          xcodebuild build -project AppBoxSDKExample.xcodeproj -scheme AppBoxSDKExample \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
+            CODE_SIGNING_ALLOWED=NO
