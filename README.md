@@ -1,9 +1,11 @@
-# AppBox SDK for iOS
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/vineetchoudhary)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/vineetchoudhary)
+[![Test status](https://img.shields.io/github/actions/workflow/status/getappbox/AppBox-iOS-SDK/test.yml?branch=master&style=for-the-badge&logo=githubactions&logoColor=white&label=tests)](https://github.com/getappbox/AppBox-iOS-SDK/actions/workflows/test.yml)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-supported-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org/package-manager/)
+[![Platform](https://img.shields.io/badge/iOS-15%2B-000000?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/Swift-6-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 
-[![Swift Package Manager](https://img.shields.io/badge/SPM-supported-brightgreen.svg)](https://swift.org/package-manager/)
-[![Platform](https://img.shields.io/badge/platform-iOS%2015%2B-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/Swift-6-orange.svg)](https://swift.org)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+# AppBox SDK for iOS
 
 Add the AppBox SDK to your development, ad-hoc or in-house (enterprise) iOS app and it tells whoever is running an old build that a newer one is ready — from the same [AppBox](https://getappbox.com) upload you already do.
 
@@ -183,6 +185,20 @@ Any contribution is more than welcome, through pull requests and [issues](https:
 ## Bugs 💔
 
 Please post bugs to the [issue tracker](https://github.com/getappbox/AppBox-iOS-SDK/issues), including a description of what is not working.
+
+## Support
+
+If the AppBox SDK has been useful to you, consider supporting its continued development.
+
+<a href="https://github.com/sponsors/vineetchoudhary">
+  <img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?style=for-the-badge&logo=github&logoColor=white" alt="Sponsor on GitHub" height="50">
+</a>
+&nbsp;
+<a href="https://buymeacoffee.com/vineetchoudhary">
+  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" height="50">
+</a>
+
+Thank you for supporting open source! 🙏
 
 ## License
 
